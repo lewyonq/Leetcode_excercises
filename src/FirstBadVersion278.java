@@ -26,5 +26,6 @@ public class FirstBadVersion278 {
 //                return low;
 //            }
 //        }
+        return 0;
     }
 }
