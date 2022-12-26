@@ -19,7 +19,7 @@ public class TwoSumII167 {
             System.out.println(r);
         }
     }
-    
+
     public static int[] twoSum(int[] numbers, int target) {
         int firstElementIndex = 0;
         while(firstElementIndex != numbers.length - 1) {
