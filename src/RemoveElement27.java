@@ -19,6 +19,7 @@ import java.util.Arrays;
 public class RemoveElement27 {
     public static void main(String[] args) {
         System.out.println(removeElement(new int[]{3,2,2,3,4,1,3,5,6,3,3,1,3,2,3,3}, 3));
+        System.out.println(removeElement(new int[]{3,2,2,3}, 3));
     }
 
     public static int removeElement(int[] nums, int val) {
