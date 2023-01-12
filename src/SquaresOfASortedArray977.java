@@ -14,7 +14,7 @@ public class SquaresOfASortedArray977 {
 
     public static int[] sortedSquares(int[] nums) {
         for(int i = 0; i < nums.length; i++) {
-            nums[i] = (int) Math.pow(nums[i], 2);
+            nums[i] *= nums[i];
         }
         Arrays.sort(nums);
         return nums;
