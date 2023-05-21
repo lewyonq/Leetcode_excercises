@@ -15,15 +15,19 @@
     You must do this by modifying the input array in-place with O(1) extra memory.
      */
 
-import java.util.Arrays;
-
 public class RemoveDuplicatesFromSortedArray26 {
     public static void main(String[] args) {
     }
 
-    public static int[] removeDuplicates(int[] nums) {
-        nums = Arrays.stream(nums).distinct().toArray();
-        return nums;
+    public static int removeDuplicates(int[] nums) {
+        int k = 0;
+        for (int n : nums) {
+            if (k == 0 || n > nums[k - 1]) {
+                nums[k] = n;
+                k++;
+            }
+        }
+        return k;
     }
 
 }
